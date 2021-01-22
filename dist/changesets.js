@@ -50,6 +50,9 @@
           changes = changes.concat(comparePrimitives(oldObj.getTime(), newObj.getTime(), path));
           break;
         case 'Object':
+          if (oldObj.$$typeof || newObj.$$typeof) {
+            break;
+          }
           diffs = compareObject(oldObj, newObj, path, embededObjKeys, keyPath);
           if (diffs.length) {
             if (path.length) {

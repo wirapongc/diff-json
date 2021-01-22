@@ -1,6 +1,6 @@
 {
-  "name": "diff-json",
-  "version": "2.0.0",
+  "name": "oli-diff-json",
+  "version": "2.0.0-3",
   "description": "Generates diffs of javascript objects.",
   "main": "index.js",
   "scripts": {
